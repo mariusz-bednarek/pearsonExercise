@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="/images/common/logo_horizontal.png"/></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li
+        ng-repeat="exercise in ::$ctrl.exercises"
+        ng-class="{'active': $ctrl.currentExercise.key == exercise.key}">
+        <a ng-click="$ctrl.changeExercise($index)">{{::exercise.name}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+<div class="main">
+  <header
+    exercises="$ctrl.exercises"
+    current-exercise="$ctrl.exercises[$ctrl.index]"
+    on-exercise-change="$ctrl.handleChangeExercise(index)">
+  </header>
+  <exercise
+    exercise="$ctrl.exercises[$ctrl.index]"
+    index="$ctrl.index"
+    count="$ctrl.exercises.length"
+    on-next="$ctrl.handleNext()"
+    on-prev="$ctrl.handlePrev()"
+    on-change-answer="$ctrl.handlehangeAnswer(exercise, question)"
+    on-check-answers="$ctrl.handleCheckAnswers(exercise)"
+    on-reset-answers="$ctrl.handleResetAnswers(exercise)">
+  </exercise>
+  <footer></footer>
+</div>

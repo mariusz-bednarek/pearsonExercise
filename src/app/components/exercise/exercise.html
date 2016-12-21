@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="exercise-header">
+    <h1>{{$ctrl.exercise.name}}</h1>
+    <h2 ng-if="!$ctrl.exercise.checked">Label the images</h2>
+    <h2 ng-if="$ctrl.exercise.checked">Check your answers</h2>
+  </div>
+  <div class="row exercise-questions">
+    <div class="col-sm-4" ng-repeat="question in $ctrl.exercise.questions">
+      <question
+        question="question"
+        on-change-answer="$ctrl.handleChangeAnswer(question)"
+        checked="$ctrl.exercise.checked"
+        answers="$ctrl.exercise.answers"
+        mode="$ctrl.exercise.mode">
+      </question>
+    </div>
+  </div>
+  <div class="exercise-footer">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href class="btn btn-sm btn-default btn-navigation" ng-click="$ctrl.prev()" ng-disabled="$ctrl.prevDisabled">&larr; Previous</a>
+      </div>
+      <div class="col-sm-4 text-center">
+        <a href class="btn btn-sm btn-success" ng-click="$ctrl.checkAnswers()" ng-if="!$ctrl.exercise.checked">Check answers</a>
+        <a href class="btn btn-sm btn-default" ng-click="$ctrl.resetAnswers()" ng-if="$ctrl.exercise.checked">Try again</a>
+      </div>
+      <div class="col-sm-4 text-right">
+        <a href class="btn btn-sm btn-default btn-navigation" ng-click="$ctrl.next()" ng-disabled="$ctrl.nextDisabled">Next &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>

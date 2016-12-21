@@ -1,0 +1,20 @@
+exercise {
+  h1 {
+    margin: 20px 0 5px;
+    font-size: 22px;
+    color: #000;
+  }
+  h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #6F6F6F;
+  }
+
+  .exercise-footer {
+    padding: 20px 0;
+    .btn-navigation {
+      border-radius: 20px;
+      width: 100px;
+    }
+  }
+}

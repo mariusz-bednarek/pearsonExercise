@@ -1,0 +1,10 @@
+$navbar-border-radius: 0;
+$navbar-default-color: #fff;
+$navbar-default-bg: #fff;
+$navbar-height: 85;
+$navbar-default-link-color: #7D8186;
+$navbar-default-link-hover-color: #F8780F;
+$navbar-default-link-active-color: $navbar-default-link-hover-color;
+$navbar-default-link-active-bg: $navbar-default-bg;
+$icon-font-path: "/node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";

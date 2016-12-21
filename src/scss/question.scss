@@ -1,0 +1,17 @@
+question {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+  img.answersBottom {
+    max-width: 200px;
+    max-height: 200px;
+    line-height: 200px;
+    padding-bottom: 20px;
+  }
+  img.answersTop {
+    max-width: 300px;
+  }
+  .dropdown-box {
+    display: inline-block;
+  }
+}
